@@ -1,8 +1,8 @@
 Mingcan Yuan (my463)
-Today, our class covered AWS service, command in Linux system, GitHub,how to use class in Python and how Shell works.
+Today, our class covered AWS service, commands in Linux system, GitHub,how to use class in Python and how Shell works.
 For AWS service, it is a useful tool for data analytics.and we learnt how to launch a VM and how to connect to it. This
 will help us if our computer aren't enought for calculation.
-In AWS, we need to use Linux and GitHub command to create new file, connect it with other language and upload our code.
-Linux command provide us with basic command such as build connection. And GitHub provide us with method to upload and share code with other, and switch the branches for different ideas in project.
+In AWS, we need to use Linux and GitHub commands to create new file, connect it with other language and upload our code.
+Linux commands provide us with basic command such as build connection. And GitHub provide us with method to upload and share code with other, and switch the branches for different ideas in project.
 As for Python, we know that it is a powerful tool. And we can define different class and inherit some property from their parents, which is one of the most useful function for Python.
 And also, we learnt how to use Shell for changing parameter easily in our loop. It is very similar with function but more convinient.
