@@ -19,6 +19,7 @@ class Tree(object):
         m = get_level(self)
         n = 2**m - 1
         ans = [['|' for i in range(n)] for j in range(m)]
+
         def dfs(node = self, level = 0, pos = 0):
             if not node:
                 return
