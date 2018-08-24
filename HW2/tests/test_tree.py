@@ -28,10 +28,3 @@ class TestTree(unittest.TestCase):
         assert t.printTree() == [['|', '|', '|', '1', '|', '|', '|'],
                                  ['|', '2', '|', '|', '|', '|', '|'],
                                  ['3', '|', '|', '|', '|', '|', '|']]
-
-     def test3(self):
-        t = Tree(1)
-        t.left = Tree(2)
-        t.right = Tree(3)
-        assert t.printTree() == [['|', '1', '|'],
-                                 ['2', '|', '3']]
