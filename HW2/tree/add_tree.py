@@ -3,11 +3,14 @@
 Created on Thu Aug 23 10:02:24 2018
 @author: yuan
 """
+
+
 class Tree(object):
     def __init__(self, x):
-       self.val = x
-       self.left = None
-       self.right = None    
+        self.val = x
+        self.left = None
+        self.right = None
+
     def printTree(self):
         def get_level(node):
             if not node:
@@ -21,12 +24,14 @@ class Tree(object):
                 return
             i = 2**(m - level - 1) - 1 + pos*(2**(m - level))
             ans[level][i] = str(node.val)
-            dfs(node.left, level + 1, pos<<1)
-            dfs(node.right, level + 1, (pos<<1) + 1)
+            dfs(node.left, level + 1, pos << 1)
+            dfs(node.right, level + 1, (pos << 1) + 1)
         dfs()
         return ans
+
+
 if __name__ == '__main__':
-   t = Tree(1)
-   t.left = Tree(2)
-   t.left.left = Tree(3)
-   print(t.printTree())
+    t = Tree(1)
+    t.left = Tree(2)
+    t.left.left = Tree(3)
+    print(t.printTree())
