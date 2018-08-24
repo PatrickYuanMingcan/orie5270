@@ -24,7 +24,11 @@ class TestTree(unittest.TestCase):
     def test3(self):
         t = Tree(1)
         t.left = Tree(2)
-        t.left.left = Tree(3)
+        t.right = Tree(3)
+        t.left.left = Tree(4)
+        t.left.right = Tree(5)
+        t.right.left = Tree(6)
+        t.right.right = Tree(7)
         assert t.printTree() == [['|', '|', '|', '1', '|', '|', '|'],
-                                 ['|', '2', '|', '|', '|', '|', '|'],
-                                 ['3', '|', '|', '|', '|', '|', '|']]
+                                 ['|', '2', '|', '|', '|', '3', '|'],
+                                 ['4', '|', '5', '|', '6', '|', '7']]
