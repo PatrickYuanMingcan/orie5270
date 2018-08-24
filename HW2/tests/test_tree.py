@@ -32,3 +32,7 @@ class TestTree(unittest.TestCase):
         assert t.printTree() == [['|', '|', '|', '1', '|', '|', '|'],
                                  ['|', '2', '|', '|', '|', '3', '|'],
                                  ['4', '|', '5', '|', '6', '|', '7']]
+
+    def test4(self):
+        t = Tree(2)
+        assert t.printTree() == [['2']]
