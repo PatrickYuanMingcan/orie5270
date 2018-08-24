@@ -33,6 +33,4 @@ class Tree(object):
 
 if __name__ == '__main__':
     t = Tree(1)
-    t.left = Tree(2)
-    t.left.left = Tree(3)
     print(t.printTree())
