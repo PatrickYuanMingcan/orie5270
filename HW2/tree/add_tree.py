@@ -20,7 +20,7 @@ class Tree(object):
         n = 2**m - 1
         ans = [['|' for i in range(n)] for j in range(m)]
 
-        def dfs(node = self, level = 0, pos = 0):
+        def dfs(node=self, level=0, pos=0):
             if not node:
                 return
             i = 2**(m - level - 1) - 1 + pos*(2**(m - level))
