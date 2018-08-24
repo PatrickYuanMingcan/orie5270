@@ -1,16 +1,13 @@
 # -*- coding: utf-8 -*-
 """
 Created on Thu Aug 23 10:02:24 2018
-
 @author: yuan
 """
-
 class Tree(object):
     def __init__(self, x):
        self.val = x
        self.left = None
-       self.right = None
-       
+       self.right = None    
     def printTree(self):
         def get_level(node):
             if not node:
@@ -28,7 +25,6 @@ class Tree(object):
             dfs(node.right, level + 1, (pos<<1) + 1)
         dfs()
         return ans
-
 if __name__ == '__main__':
    t = Tree(1)
    t.left = Tree(2)
